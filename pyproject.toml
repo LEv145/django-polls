@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "django-polls"
+version = "0.1.0"
+description = ""
+authors = ["lev <levbezrukov@bk.ru>"]
+readme = "README.rst"
+license = "GPL-3.0-only"
+classifiers = [
+    "Environment :: Web Environment",
+    "Framework :: Django",
+    "Framework :: Django :: 4.0",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
+]
+packages = [
+    {include = "polls"},
+]
+include = [
+    "LICENSE",
+    "README.rst",
+    "polls/static/**/*",
+    "polls/templates/**/*",
+    "docs/*",
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.8"
+Django = "^4.0.3"
+django-stubs = "^1.10.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
