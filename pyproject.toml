@@ -2,7 +2,7 @@
 name = "django-polls"
 version = "0.1.0"
 description = ""
-authors = ["lev <levbezrukov@bk.ru>"]
+authors = ["lev"]
 readme = "README.rst"
 license = "GPL-3.0-only"
 classifiers = [
